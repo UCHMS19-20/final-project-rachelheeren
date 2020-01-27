@@ -1,6 +1,6 @@
 # Surviving Magnet
 
-As many of us are aware, Magnet can be really challenging. So to find some fun in that, I created a game of the **ooh** Magnet experience.
+As many of us are aware, Magnet can be really challenging. So to find some fun in that, I created a game of the ***Magnet experience***.
 
 In this game, the goal is to finish all four years of high school while maintaining the highest possible grade. If you get below a 65 at any point, you drop out of Magnet.
 
