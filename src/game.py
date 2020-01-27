@@ -153,7 +153,7 @@ def senioryear():     #Senior year stage
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
-        #time.sleep(3)
+        time.sleep(6)
     print(f"\n\nCongrats {name}, you survived Magnet! Your final grade was a {gradelvl}.")
         
 
@@ -298,7 +298,7 @@ def junioryear():     #Junior year stage
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
-        time.sleep(3)
+        time.sleep(6)
     senioryear()
         
 
@@ -478,7 +478,7 @@ def sophomoreyear():     #Sophomore year stage
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
-        time.sleep(3)
+        time.sleep(6)
     junioryear()
         
 
@@ -656,7 +656,7 @@ def freshmenyear():     #Freshmen year stage
             else:
                 print("Oof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
                 grade(-8)
-        time.sleep(3)
+        time.sleep(6)
     sophomoreyear()
         
 
