@@ -1,4 +1,4 @@
-#Surviving Magnet
+# Surviving Magnet
 
 As many of us are aware, Magnet can be really challenging. So to find some fun in that, I created a game of the **ooh** Magnet experience.
 
@@ -8,17 +8,17 @@ To get through the pits of doom aka high school, you must go through an entire A
 
 
 
-###Citations
+### Citations
 
 The following source was referenced for python syntax:
 https://www.w3schools.com/python/default.asp
 
-###Flowchart
+### Flowchart
 
 Link to flowchart: 
 https://drive.google.com/file/d/1aIqfrkN5zB_GBwF13f95jG-iQW3_fPfb/view?usp=sharing
 
-###Presentation
+### Presentation
 
 Link to Google Slides presentation: 
 https://docs.google.com/presentation/d/1-dYF-7Tl5TpcjcAt8_Pm2k_KCnAdFbP-LdQtXk72vx4/edit?usp=sharing
