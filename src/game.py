@@ -124,7 +124,7 @@ def senioryear():     #Senior year stage
                 print("You got the question correct and start bursting out into tears of joy. Your grade raised 2 points.(Did you use a calculator? Be honest. Cause if you did, you violated the holy Academic Honesty Policy.)")
                 grade(2)
             else:
-                print("Oof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
+                print("\nOof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
                 grade(-8)
         if seniorclasses[course]==("AP Calc BC" or "Linear Algebra" or "Math Stat"):
             print(f"{seniorclasses[course]}")
@@ -148,7 +148,7 @@ def senioryear():     #Senior year stage
                     print("You got the question correct and start bursting out into tears of joy. Your grade raised 2 points.(Did you use a calculator? Be honest. Cause if you did, you violated the holy Academic Honesty Policy.)")
                     grade(2)
                 else:
-                    print("Oof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
+                    print("\nOof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
                     grade(-10)
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
@@ -269,7 +269,7 @@ def junioryear():     #Junior year stage
                 print("You got the question correct and start bursting out into tears of joy. Your grade raised 2 points.(Did you use a calculator? Be honest. Cause if you did, you violated the holy Academic Honesty Policy.)")
                 grade(2)
             else:
-                print("Oof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
+                print("\nOof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
                 grade(-8)
         if juniorclasses[course]==("AP Calc BC" or "Multi/Linear Algebra"):
             print(f"{juniorclasses[course]}")
@@ -293,12 +293,14 @@ def junioryear():     #Junior year stage
                     print("You got the question correct and start bursting out into tears of joy. Your grade raised 2 points.(Did you use a calculator? Be honest. Cause if you did, you violated the holy Academic Honesty Policy.)")
                     grade(2)
                 else:
-                    print("Oof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
+                    print("\nOof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
                     grade(-10)
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
         time.sleep(6)
+    print(f"\n\nCongrats {name}, you finished Junior year! Your current grade is a {gradelvl}.")
+    time.sleep(5)
     senioryear()
         
 
@@ -449,7 +451,7 @@ def sophomoreyear():     #Sophomore year stage
                 print("You got the question correct and start bursting out into tears of joy. Your grade raised 2 points.(Did you use a calculator? Be honest. Cause if you did, you violated the holy Academic Honesty Policy.)")
                 grade(2)
             else:
-                print("Oof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
+                print("\nOof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
                 grade(-8)
         if sophomoreclasses[course]=="AP Calc BC":
             print(f"{sophomoreclasses[course]}")
@@ -473,12 +475,14 @@ def sophomoreyear():     #Sophomore year stage
                     print("You got the question correct and start bursting out into tears of joy. Your grade raised 2 points.(Did you use a calculator? Be honest. Cause if you did, you violated the holy Academic Honesty Policy.)")
                     grade(2)
                 else:
-                    print("Oof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
+                    print("\nOof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
                     grade(-10)
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
         time.sleep(6)
+    print(f"\n\nCongrats {name}, you finished Sophomore year! Your current grade is a {gradelvl}.")
+    time.sleep(5)
     junioryear()
         
 
@@ -654,9 +658,11 @@ def freshmenyear():     #Freshmen year stage
                 print("You got the question correct and start bursting out into tears of joy. Your grade raised 2 points.(Did you use a calculator? Be honest. Cause if you did, you violated the holy Academic Honesty Policy.)")
                 grade(2)
             else:
-                print("Oof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
+                print("\nOof. That was NOT pretty. Mr. Straut murders your grade and will to continue calc.")
                 grade(-8)
         time.sleep(6)
+    print(f"\n\nCongrats {name}, you finished Freshmen year! Your current grade is a {gradelvl}.")
+    time.sleep(5)
     sophomoreyear()
         
 
