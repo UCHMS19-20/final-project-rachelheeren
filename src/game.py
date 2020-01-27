@@ -106,13 +106,13 @@ def senioryear():     #Senior year stage
               grade(0)
         if seniorclasses[course]=="AP Calc AB":
             print(f"{seniorclasses[course]}")
-            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads a * b + (c * d)^e.")
             a=random.randint(10,500)
             b=random.randint(10,500)
             b=random.randint(10,500)
             c=random.randint(10,500)
             d=random.randint(10,500)
             e=random.randint(2,7)
+            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads {a}*{b}+({c}*{d})^{e}.")
             rightans=(a*b)+((c*d)**e)
             choice=""
             while choice=="":
@@ -137,7 +137,7 @@ def senioryear():     #Senior year stage
                 c=random.randint(10,500)
                 d=random.randint(10,500)
                 e=random.randint(2,7)
-                print(f"Dr. J. tells all of you to go into test formation and that the exam is NO CALCULATOR. You look at the first question. It says a * b + (c * d)^e. What is your answer? ")
+                print(f"Dr. J. tells all of you to go into test formation and that the exam is NO CALCULATOR. You look at the first question. It says {a}*{b}+({c}*{d})^{e}. What is your answer? ")
                 choice=""
                 while choice=="":
                   try:
@@ -251,13 +251,13 @@ def junioryear():     #Junior year stage
               grade(-1)
         if juniorclasses[course]=="AP Calc AB":
             print(f"{juniorclasses[course]}")
-            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads a * b + (c * d)^e.")
             a=random.randint(10,500)
             b=random.randint(10,500)
             b=random.randint(10,500)
             c=random.randint(10,500)
             d=random.randint(10,500)
             e=random.randint(2,7)
+            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads {a}*{b}+({c}*{d})^{e}.")
             rightans=(a*b)+((c*d)**e)
             choice=""
             while choice=="":
@@ -282,7 +282,7 @@ def junioryear():     #Junior year stage
                 c=random.randint(10,500)
                 d=random.randint(10,500)
                 e=random.randint(2,7)
-                print(f"Dr. J. tells all of you to go into test formation and that the exam is NO CALCULATOR. You look at the first question. It says a * b + (c * d)^e. What is your answer? ")
+                print(f"Dr. J. tells all of you to go into test formation and that the exam is NO CALCULATOR. You look at the first question. It says {a}*{b}+({c}*{d})^{e}. What is your answer? ")
                 choice=""
                 while choice=="":
                   try:
@@ -431,13 +431,13 @@ def sophomoreyear():     #Sophomore year stage
               grade(-1)
         if sophomoreclasses[course]=="AP Calc AB":
             print(f"{sophomoreclasses[course]}")
-            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads a * b + (c * d)^e.")
             a=random.randint(10,500)
             b=random.randint(10,500)
             b=random.randint(10,500)
             c=random.randint(10,500)
             d=random.randint(10,500)
             e=random.randint(2,7)
+            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads {a}*{b}+({c}*{d})^{e}.")
             rightans=(a*b)+((c*d)**e)
             choice=""
             while choice=="":
@@ -462,7 +462,7 @@ def sophomoreyear():     #Sophomore year stage
                 c=random.randint(10,500)
                 d=random.randint(10,500)
                 e=random.randint(2,7)
-                print(f"Dr. J. tells all of you to go into test formation and that the exam is NO CALCULATOR. You look at the first question. It says a * b + (c * d)^e. What is your answer? ")
+                print(f"Dr. J. tells all of you to go into test formation and that the exam is NO CALCULATOR. You look at the first question. It says {a}*{b}+({c}*{d})^{e}. What is your answer? ")
                 choice=""
                 while choice=="":
                   try:
@@ -636,13 +636,13 @@ def freshmenyear():     #Freshmen year stage
               grade(-1)
         if freshmenclasses[course]=="AP Calc AB":
             print(f"{freshmenclasses[course]}")
-            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads a * b + (c * d)^e.")
             a=random.randint(10,500)
             b=random.randint(10,500)
             b=random.randint(10,500)
             c=random.randint(10,500)
             d=random.randint(10,500)
             e=random.randint(2,7)
+            print(f"\n\"GOOD MORNING CLASS!\"exclaims Mr. Straut, \"SOLVE THE PROBLEM ON THE BOARD. HARSH STOP LEANING BACK ON YOUR CHAIR.\"\nThe problem on the board reads {a}*{b}+({c}*{d})^{e}.")
             rightans=(a*b)+((c*d)**e)
             choice=""
             while choice=="":
