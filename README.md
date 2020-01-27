@@ -1,21 +1,22 @@
-# Final Project
+Surviving Magnet
 
-## Goal
+As many of us are aware, Magnet can be really challenging. So to find some fun in that, I created a game of the **ooh** Magnet experience.
 
-Text-based game where student tries to maximize grade by putting in minimal time and effort as well as procrastinating as long as possible.
+In this game, the goal is to finish all four years of high school while maintaining the highest possible grade. If you get below a 65 at any point, you drop out of Magnet.
 
-## Timeline
+To get through the pits of doom aka high school, you must go through an entire A and B day, choosing what you want to do in these classes. Some choices will be beneficial to you, other won't be. If you can survive the grueling trials of Sanservino's class or ace Mrs. Kipp's Kahoots, this is the game for you. Good luck on your endeavors!
 
-Date  | Checkpoint
-------|---------------------------------------------
-12/16 | Project Proposals Due (all classes)
-12/20 | Git repository setup check
-1/7   | First code checkpoint
-1/13  | Second code checkpoint
-1/17  | Third code checkpoint
-1/23  | Exams Begin. All code and documentation due
 
-## Links
 
-* [Documentation](documentation.md)
-* [Resources](resources.md)
+Citations
+
+The following source was referenced for python syntax:
+https://www.w3schools.com/python/default.asp
+
+Flowchart
+Link to flowchart: 
+
+Presentation
+
+Link to Google Slides presentation: 
+https://docs.google.com/presentation/d/1-dYF-7Tl5TpcjcAt8_Pm2k_KCnAdFbP-LdQtXk72vx4/edit?usp=sharing

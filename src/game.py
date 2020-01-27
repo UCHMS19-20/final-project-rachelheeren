@@ -160,7 +160,7 @@ def senioryear():     #Senior year stage
 
 def junioryear():     #Junior year stage
     global name,juniorclasses,gradelvl
-    print(f"\n\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nWelcome to Junior year at Magnet! Your current grade is a {gradelvl}.")
+    print(f"\n\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nWelcome to Junior year at Magnet! Your current grade is a {gradelvl}. You will be taking: ")
     for x in range(len(juniorclasses)): 
       print(juniorclasses[x])
     time.sleep(3)
@@ -305,7 +305,7 @@ def junioryear():     #Junior year stage
 
 def sophomoreyear():     #Sophomore year stage
     global name,sophomoreclasses,gradelvl
-    print("\n\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nWelcome to Sophomore year at Magnet! We\'ll be nice and start you out with a 100. Time to go to your first class!")
+    print("\n\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nWelcome to Sophomore year at Magnet! Your current grade is a {gradelvl}. You will be taking: ")
     for x in range(len(sophomoreclasses)): 
       print(sophomoreclasses[x])
     time.sleep(3)
@@ -516,7 +516,12 @@ def freshmenyear():     #Freshmen year stage
             print(f"{freshmenclasses[course]}")
             print(f"\nYou walk into the Biology room when Dr. Gupta stops you immediately in your tracks. She says, \"{name}, why are you late to my class?\" \n1. Say you came from across campus\n2. Say you were finishing up a test\n3. Give her a late pass")
             playerchoice=choose(3)
-            if playerchoice == (1 or 2):
+            if playerchoice == 1:
+              print("Dr Gupta replies, \"Nonsense! Next time show up to my class on time. I am going to deduct points off your gr- HARSH, STOP LEANING BACK ON THE CHAIR!\"")
+              time.sleep(2)
+              print("Thanks to Harsh always leaning back on his chair, Dr. Gupta forgot to deduct points from your grade.")
+              grade(0)
+            if playerchoice == 2:
               print("Dr Gupta replies, \"Nonsense! Next time show up to my class on time. I am going to deduct points off your gr- HARSH, STOP LEANING BACK ON THE CHAIR!\"")
               time.sleep(2)
               print("Thanks to Harsh always leaning back on his chair, Dr. Gupta forgot to deduct points from your grade.")
