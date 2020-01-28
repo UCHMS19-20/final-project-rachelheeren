@@ -26,7 +26,8 @@ def grade(change):    #changes grade level when player chooses something during 
     if change == 0:
       print("Your grade has not changed.")
     if gradelvl<65: #lose game and exit program
-        print(f"Welp {name}, you were not smart enough to keep up at Magnet and we are sad to say you dropped out cause you failed school with a {gradelvl}. Have fun at UCC or whatever game you play next!")
+        time.sleep(4)
+        print(f"\n\nWelp {name}, you were not smart enough to keep up at Magnet and we are sad to say you dropped out cause you failed school with a {gradelvl}. Have fun at UCC or whatever game you play next!")
         sys.exit()
     if gradelvl>100:
         gradelvl=100
@@ -82,19 +83,27 @@ def senioryear():     #Senior year stage
             grade(10)
         if seniorclasses[course]=="AP Physics E&M":
             print(f"{seniorclasses[course]}")
-            print(f"\nDr. Fang gives you your test grade back and BOY was that NOT pretty.")
-            grade(-10)
+            print(f"\nYour judgement to take E&M was clearly not a good one. Dr. Fang gives you your test grade back and BOY was that NOT pretty. You cry as you see the paper riddled with red scribbles. However, your saving grace might be the curve. I mean, if you did better than everyone else and still got a 40, there may be some hope. Let's see.")
+            time.sleep(15)
+            search = random.randint(1,5)
+            if search == 5:
+              print("Holy cow! You got the best grade in the class and Dr. Fang curved your grade to a 100 AND added two points extra credit to your grade!")
+              grade(2)
+            else:
+              print("Sorry, you did not get extra credit and your average dropped 25 points. Only one word can describe this tragedy: oof.")
+              grade(-25)
         if seniorclasses[course]=="AP Lang":
             print(f"{seniorclasses[course]}")
-            print(f"\nYou did not finish the 50 essays that were do that day.")
+            print(f"\nYou did not finish the 50 essays that were do that day and your teacher was not pleased.")
             grade(-20)
         if seniorclasses[course]=="AP Euro":
             print(f"{seniorclasses[course]}")
-            print(f"\nMrs. Valley greets you and gives you a Powerpoint.")
+            print(f"\nMrs. Valley greets you and gives you a Powerpoint and lets you let the senioritis kick in.")
             grade(0)
         if seniorclasses[course]==("Spanish 4" or "AP Spanish Lang" or "AP Spanish Lit"):
             print(f"{seniorclasses[course]}")
             print(f"\nSenor Valverde greets you all an announces that you have a presentation on the movie you did not pay attention to in class.\n1. Leech off of someone else\n2. Go up\n3. Fake being sick")
+            playerchoice=choose(3)
             if playerchoice == 1:
               print("You quickly look at your friends notes and give a brief presentation. Senor Valverde was not please but you thought that was very much adequate.")
               grade(-2)
@@ -128,6 +137,7 @@ def senioryear():     #Senior year stage
                 grade(-8)
         if seniorclasses[course]==("AP Calc BC" or "Linear Algebra" or "Math Stat"):
             print(f"{seniorclasses[course]}")
+            print("\nHarsh comes sprinting into class and shouts, \"Happy high noon EPIC. GAMERS. How's everyone doing on this fine day?\" Harsh's godly presence immediately makes your day.")
             search=random.randint(1,2)
             if search==2:
                 print("Oh no! Dr. J. assigned another GA!")
@@ -150,6 +160,14 @@ def senioryear():     #Senior year stage
                 else:
                     print("\nOof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
                     grade(-10)
+                    time.sleep(3)
+                    search=random.randint(1,3)
+                    if search == 3:
+                      positiveimpact = random.randint(1,15)
+                      print(f"You received {positiveimpact} points of \"positive impact\" (bless your soul Dr. J.).")
+                      grade(positiveimpact)
+                    else:
+                      print("You did not receive positive impact. :(")
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
@@ -189,7 +207,7 @@ def junioryear():     #Junior year stage
             playerchoice=choose(3)
             if playerchoice == 1:
               print("Mr. Raite was not pleased that you didn't follow the rules and took off points from your grade. The acid is still burning through the table.")
-              grade(-2)
+              grade(-4)
             if playerchoice == 2:
               print("By sheer dumb luck you manage to perform the titration correctly and get credit for the lab.")
               grade(1)
@@ -198,8 +216,8 @@ def junioryear():     #Junior year stage
               grade(-8)
         if juniorclasses[course]=="AP Physics Mech":
             print(f"{juniorclasses[course]}")
-            print(f"\nDr. Fang gives you your test grade back and BOY was that NOT pretty.")
-            grade(-4)
+            print(f"\nDr. Fang gives you your test grade back and BOY was that NOT pretty. Hopefully you get grading points and a curve? Also, you might need a tutor, just saying...")
+            grade(-9)
         if juniorclasses[course]=="Modern American Lit":
             print(f"{juniorclasses[course]}")
             print(f"\nMs. Arnold gives you a free period to conduct research for your upcoming research paper. \n1. Do research\n2. Go on your phone")
@@ -220,7 +238,7 @@ def junioryear():     #Junior year stage
                   grade(20)
             else:
                   print("\nfailed! I mean, come on, what did you expect?")
-                  grade(-40)
+                  grade(-70)
         if juniorclasses[course]==("Spanish 3" or "Spanish 4" or "AP Spanish Lang"):
             print(f"{juniorclasses[course]}")
             print(f"\nSenor Valverde greets you all an announces that you have a presentation on the movie you did not pay attention to in class.\n1. Leech off of someone else\n2. Go up\n3. Fake being sick")
@@ -248,7 +266,7 @@ def junioryear():     #Junior year stage
               grade(1)
             else:
               print("Mrs. Draesal is not happy that you did not do the practice problems for homework and makes you do them during class. He also marked you for a 0 on homework.")
-              grade(-1)
+              grade(-2)
         if juniorclasses[course]=="AP Calc AB":
             print(f"{juniorclasses[course]}")
             a=random.randint(10,500)
@@ -273,6 +291,7 @@ def junioryear():     #Junior year stage
                 grade(-8)
         if juniorclasses[course]==("AP Calc BC" or "Multi/Linear Algebra"):
             print(f"{juniorclasses[course]}")
+            print("\nHarsh comes sprinting into class and shouts, \"Happy high noon EPIC. GAMERS. How's everyone doing on this fine day?\" Harsh's godly presence immediately makes your day.")
             search=random.randint(1,2)
             if search==2:
                 print("Oh no! Dr. J. assigned another GA!")
@@ -295,19 +314,28 @@ def junioryear():     #Junior year stage
                 else:
                     print("\nOof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
                     grade(-10)
+                    time.sleep(3)
+                    search=random.randint(1,3)
+                    if search == 3:
+                      positiveimpact = random.randint(1,15)
+                      print(f"You received {positiveimpact} points of \"positive impact\" (bless your soul Dr. J.).")
+                      grade(positiveimpact)
+                    else:
+                      print("You did not receive positive impact. :(")
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
         time.sleep(6)
     print(f"\n\nCongrats {name}, you finished Junior year! Your current grade is a {gradelvl}.")
     time.sleep(5)
+    #go to senior year
     senioryear()
         
 
 
 def sophomoreyear():     #Sophomore year stage
     global name,sophomoreclasses,gradelvl
-    print("\n\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nWelcome to Sophomore year at Magnet! Your current grade is a {gradelvl}. You will be taking: ")
+    print(f"\n\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nWelcome to Sophomore year at Magnet! Your current grade is a {gradelvl}. You will be taking: ")
     for x in range(len(sophomoreclasses)): 
       print(sophomoreclasses[x])
     time.sleep(3)
@@ -328,7 +356,7 @@ def sophomoreyear():     #Sophomore year stage
             playerchoice=choose(3)
             if playerchoice == 1:
               print("Mrs. O'Connor was not pleased that you didn't follow the rules in the Makerspace and took off points from your grade. You're still bleeding(oops).")
-              grade(-2)
+              grade(-3)
             if playerchoice == 2:
               print("Mrs. O'Connor was not pleased that you didn't stay on task and took off points from your grade.")
               grade(-1)
@@ -345,27 +373,28 @@ def sophomoreyear():     #Sophomore year stage
             playerchoice=choose(3)
             if playerchoice == 1:
               print("Mrs. Wickerhauser was not pleased that you didn't follow the rules and took off points from your grade. The acid is still burning through the table.")
-              grade(-2)
+              grade(-3)
             if playerchoice == 2:
               print("By sheer dumb luck you manage to perform the titration correctly and get credit for the lab.")
-              grade(1)
+              grade(3)
             if playerchoice == 3:
               print("The room engulfs in chaos as Mrs. Wickerhauser frantically tries to put out the fire. Looks like you won't be in any labs any time soon.")
               grade(-8) 
         if sophomoreclasses[course]=="Physics":
             print(f"{sophomoreclasses[course]}")
-            print(f"\nDr. Fang gives you your test grade back and BOY was that NOT pretty.")
-            grade(-4)
+            print(f"\nDr. Fang gives you your test grade back and BOY was that NOT pretty. Tears start streaming down your face as your grade drops 7 POINTS. AHHHHHHH")
+            grade(-7)
         if sophomoreclasses[course]=="Early American Lit":
             print(f"{sophomoreclasses[course]}")
-            print(f"\nOh no! Mrs. Pinto gives you a pop on the reading!")
+            print(f"\nOh no! Mrs. Pinto gives you a pop on the reading! You...")
+            time.sleep(4)
             search=random.randint(1,3)
             if search==3:
                   print("\nYou ace the pop!")
                   grade(2)
             else:
                   print("\nYou fail the pop!")
-                  grade(-2)
+                  grade(-4)
         if sophomoreclasses[course]=="US History 1":
             print(f"{sophomoreclasses[course]}")
             print(f"\nMrs. Valley greets you and gives you a Powerpoint.")
@@ -415,7 +444,7 @@ def sophomoreyear():     #Sophomore year stage
               grade(1)
             else:
               print("Mr. Liu is not happy that you did not do the practice problems for homework and makes you do them during class. He also marked you for a 0 on homework.")
-              grade(-1)
+              grade(-2)
         if sophomoreclasses[course]=="Math Analysis":
             print(f"{sophomoreclasses[course]}")
             print(f"\nMrs. Draesal puts a problem on the board that reads 3 * 5 + 2 * 4 = \n")
@@ -430,7 +459,7 @@ def sophomoreyear():     #Sophomore year stage
               grade(1)
             else:
               print("Mrs. Draesal is not happy that you did not do the practice problems for homework and makes you do them during class. He also marked you for a 0 on homework.")
-              grade(-1)
+              grade(-2)
         if sophomoreclasses[course]=="AP Calc AB":
             print(f"{sophomoreclasses[course]}")
             a=random.randint(10,500)
@@ -455,6 +484,7 @@ def sophomoreyear():     #Sophomore year stage
                 grade(-8)
         if sophomoreclasses[course]=="AP Calc BC":
             print(f"{sophomoreclasses[course]}")
+            print("\nHarsh comes sprinting into class and shouts, \"Happy high noon EPIC. GAMERS. How's everyone doing on this fine day?\" Harsh's godly presence immediately makes your day.")
             search=random.randint(1,2)
             if search==2:
                 print("Oh no! Dr. J. assigned another GA!")
@@ -477,12 +507,21 @@ def sophomoreyear():     #Sophomore year stage
                 else:
                     print("\nOof. That was NOT pretty. At this point, you're PRAYING that Dr. J. unleashes his \"positive impact\" manuveur.")
                     grade(-10)
+                    time.sleep(3)
+                    search=random.randint(1,3)
+                    if search == 3:
+                      positiveimpact = random.randint(1,15)
+                      print(f"You received {positiveimpact} points of \"positive impact\" (bless your soul Dr. J.).")
+                      grade(positiveimpact)
+                    else:
+                      print("You did not receive positive impact. :(") 
             else:
               print("Whew! No GA today. You say hi to Dr. J.")
               grade(0)
         time.sleep(6)
     print(f"\n\nCongrats {name}, you finished Sophomore year! Your current grade is a {gradelvl}.")
     time.sleep(5)
+    #go to junior year
     junioryear()
         
 
@@ -491,7 +530,7 @@ def sophomoreyear():     #Sophomore year stage
 def freshmenyear():     #Freshmen year stage
     global name,freshmenclasses,gradelvl
     print("\n\n\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n\nWelcome to Freshmen year at Magnet! We\'ll be nice and start you out with a 100. Time to go to your first class!")
-    for course in range(len(freshmenclasses)): #goes through every class in Freshmen year
+    for course in range(len(freshmenclasses)): #goes through every class in Freshmen year based on schedule
         print("\n------------------------------------------------------------------------")
         #since course list is randomized, statements below correspond to the correct class that the student has
         if freshmenclasses[course]=="Freshmen Tech": 
@@ -511,11 +550,11 @@ def freshmenyear():     #Freshmen year stage
                   grade(1)
               else:
                   print("Mrs. Kipp say you and called you out for your lack or respect in front of the entire class, giving you a detention in the process and a 0 for the day.")
-                  grade(-2)
+                  grade(-3)
         if freshmenclasses[course]=="Gym 1":
             print(f"{freshmenclasses[course]}")
             print(f"\nWhew! Glad to see one class is looking out for your QPA! As a tryhard freshmen, Mr. DelPrete has taken a liking to you and your work ethic and decides to give you full marks.")
-            grade(2)
+            grade(1)
         if freshmenclasses[course]=="Biology":
             print(f"{freshmenclasses[course]}")
             print(f"\nYou walk into the Biology room when Dr. Gupta stops you immediately in your tracks. She says, \"{name}, why are you late to my class?\" \n1. Say you came from across campus\n2. Say you were finishing up a test\n3. Give her a late pass")
@@ -526,16 +565,14 @@ def freshmenyear():     #Freshmen year stage
               print("Thanks to Harsh always leaning back on his chair, Dr. Gupta forgot to deduct points from your grade.")
               grade(0)
             if playerchoice == 2:
-              print("Dr Gupta replies, \"Nonsense! Next time show up to my class on time. I am going to deduct points off your gr- HARSH, STOP LEANING BACK ON THE CHAIR!\"")
-              time.sleep(2)
-              print("Thanks to Harsh always leaning back on his chair, Dr. Gupta forgot to deduct points from your grade.")
-              grade(0)
+              print(f"Dr Gupta replies, \"Nonsense! You kids give me a headache! Go find your seat quickly {name}.\" Dr. Gupta took off points for you being late.")
+              grade(-2)
             if playerchoice == 3:
               print("Dr. Gupta takes the late pass reluctantly and continues teaching her lesson. She only had to offer to a student to spray water on them to wake them up twice during the period.")
               grade(0)
         if freshmenclasses[course]=="SIA":
             print(f"{freshmenclasses[course]}")
-            print(f"\nWelcome to SIA, the most utterly useless course(sorry Mr. Moskowitz! Mr. Moskowitz tells you to continue your projects in class and put in a 100 for class participation.")
+            print(f"\nWelcome to SIA, the most utterly useless course(sorry Mr. Moskowitz)! Mr. Moskowitz tells you to continue your projects in class and put in a 100 for class participation.")
             grade(1)
         if freshmenclasses[course]=="World Lit":
             print(f"{freshmenclasses[course]}")
@@ -562,7 +599,7 @@ def freshmenyear():     #Freshmen year stage
                 grade(2)
             else:
                 print("\nflies off of the board :( Your group was so upset that they tore up your notes, making you fail the open-book test.")
-                grade(-2)
+                grade(-4)
         if freshmenclasses[course]==("Spanish 1" or "Spanish 2"):
             print(f"{freshmenclasses[course]}")
             print(f"\n\"Hola clase!\" exclaimed Senora Mejia. \"Hoy aprenderemos a conjugar verbos en español.\"\n1. What?\n2. Estoy tan emocionada!\n3. Yo soyo mucho gusto en espanolo (sorry Nicole)")
@@ -584,8 +621,9 @@ def freshmenyear():     #Freshmen year stage
         if freshmenclasses[course]=="Spanish 3":
             print(f"{freshmenclasses[course]}")
             print(f"\nSenor Valverde greets you all an announces that you have a presentation on the movie you did not pay attention to in class.\n1. Leech off of someone else\n2. Go up\n3. Fake being sick")
+            playerchoice=choose(3)
             if playerchoice == 1:
-              print("You quickly look at your friends notes and give a brief presentation. Senor Valverde was not please but you thought that was very much adequate.")
+              print("You quickly look at your friends notes and give a brief presentation. Senor Valverde was not please but you thought **that was very much adequate**.")
               grade(-2)
             if playerchoice == 2:
               print(f"You completely choke and start crying in front of the class. Not only did you embarrass yourself in front of your classmates, but Senor Valverde said, \"No has venido preparado {name}. Espero que puedan aprender la próxima vez a prestar atención durante la clase. Por favor toma un pañuelo.\"")
@@ -622,7 +660,7 @@ def freshmenyear():     #Freshmen year stage
               grade(1)
             else:
               print("Mr. Liu is not happy that you did not do the practice problems for homework and makes you do them during class. He also marked you for a 0 on homework.")
-              grade(-1)
+              grade(-2)
         if freshmenclasses[course]=="Math Analysis":
             print(f"{freshmenclasses[course]}")
             print(f"\nMrs. Draesal puts a problem on the board that reads 3 * 5 + 2 * 4 = \n")
@@ -637,7 +675,7 @@ def freshmenyear():     #Freshmen year stage
               grade(1)
             else:
               print("Mrs. Draesal is not happy that you did not do the practice problems for homework and makes you do them during class. He also marked you for a 0 on homework.")
-              grade(-1)
+              grade(-2)
         if freshmenclasses[course]=="AP Calc AB":
             print(f"{freshmenclasses[course]}")
             a=random.randint(10,500)
@@ -663,6 +701,7 @@ def freshmenyear():     #Freshmen year stage
         time.sleep(6)
     print(f"\n\nCongrats {name}, you finished Freshmen year! Your current grade is a {gradelvl}.")
     time.sleep(5)
+    #go to sophomore year
     sophomoreyear()
         
 
@@ -670,6 +709,7 @@ def freshmenyear():     #Freshmen year stage
 
 def startup():      #Initialize classes student takes as well as gets important variables such as name.
     print("Welcome to Surviving Magnet, the game where you have to survive Magnet (I thought that was self-explanatory. If you couldn\'t get that, maybe this isn\'t the right game for you). \n The goal of the game is to get the highest grade possible without crying. But of course, if you don\'t get above a 90, are you really a Magnet student?\n You fail when you FAIL (duh). Try not to drop out.")
+    #Get name of player and save
     global name
     name=input("\nLet\'s get started. What is your name? ").title()
     print(f"Well hello {name}, welcome to Magnet. First we need to choose your classes for Freshmen year. You will have to be placed into math and spanish classes.")
@@ -680,9 +720,9 @@ def startup():      #Initialize classes student takes as well as gets important 
     spanishknowledge=input("\nLet\'s see if you know basic spanish. What is hello in spanish? ")
     if spanishknowledge=="hola":
       spanishlevel=random.choice(spanishclasses[1:3])
-      print(f"Thank god you know that hello in spanish is hola, you will be placed in {spanishlevel}")
+      print(f"Thank god you know that hello in spanish is hola, you will be placed in {spanishlevel}.")
       spanishpos = spanishclasses.index(spanishlevel)
-      spanishclasses = spanishclasses[spanishpos:]
+      spanishclasses = spanishclasses[spanishpos:] #delete lower spanish classes from list
     else:
       print(f"How could you NOT know that hola is hello in spanish?!? For that you deserve to be placed in {spanishclasses[0]}. I\'m seriously reconsidering your place in this game.")
     
@@ -694,11 +734,11 @@ def startup():      #Initialize classes student takes as well as gets important 
       mathlevel=random.choice(mathclasses[1:4])
       print(f"Thank god you know basic math, you will be placed in {mathlevel}.")
       mathpos = mathclasses.index(mathlevel)
-      mathclasses = mathclasses[mathpos:]
+      mathclasses = mathclasses[mathpos:] #delete lower math classes from list
     else:
       print(f"You are SERIOUSLY disappointing me right now. For that you deserve to be placed in {mathclasses[0]}.")
    
-   #Assign classes for all years
+   #Assign classes for all years according to spanish and math placement level
     global freshmenclasses,sophomoreclasses,juniorclasses,seniorclasses
     freshmenclasses = ["Freshmen Tech","Gym 1","Biology","SIA","World Lit","World History", spanishclasses[0], mathclasses[0]]
     sophomoreclasses = ["Sophomore Tech","Gym 2","Chemistry","Physics","Early American Lit","US History 1", spanishclasses[1], mathclasses[1]]
@@ -718,6 +758,7 @@ def startup():      #Initialize classes student takes as well as gets important 
     time.sleep(3)
     print(f"\nBest of luck to you, {name}, you will need it.")
     time.sleep(5)
+    #go to freshman year
     freshmenyear()
     
 startup()
