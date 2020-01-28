@@ -676,10 +676,10 @@ def startup():      #Initialize classes student takes as well as gets important 
     
     #Get spanish placement
     global spanishclasses
-    spanishclasses = ["Spanish 1", "Spanish 2", "Spanish 3", "Spanish 4", "AP Spanish Lang, AP Spanish Lit"]
+    spanishclasses = ["Spanish 1", "Spanish 2", "Spanish 3", "Spanish 4", "AP Spanish Lang", "AP Spanish Lit"]
     spanishknowledge=input("\nLet\'s see if you know basic spanish. What is hello in spanish? ")
     if spanishknowledge=="hola":
-      spanishlevel=random.choice(spanishclasses[1:2])
+      spanishlevel=random.choice(spanishclasses[1:3])
       print(f"Thank god you know that hello in spanish is hola, you will be placed in {spanishlevel}")
       spanishpos = spanishclasses.index(spanishlevel)
       spanishclasses = spanishclasses[spanishpos:]
